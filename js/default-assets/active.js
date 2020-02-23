@@ -182,6 +182,11 @@
         $(this).toggleClass('active');
         $(".razo-social-share-area").toggleClass('active');
     });
+    window.addEventListener("load", start);
+
+    function start() {
+        $(".razo-social-share-area").toggleClass('active');
+    }
     $(".ss-close-btn").on('click', function () {
         $(".razo-social-share-area").removeClass('active');
     });
